@@ -1,0 +1,450 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+background-color: #fffffe;
+  overflow-x: hidden;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  padding-bottom: 15px;
+}
+nav{
+  background-color: #eeeeef;
+  width: 95vw;
+  height: auto;
+  align-self: center;
+  display: flex;
+  padding: 5px 0px;
+  margin: 5px 0px;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form{
+  margin-left: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+input{
+  width: 210px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: #dedede
+}
+
+input::placeholder{
+  text-align: center;
+  font-size: 17px;
+  font-family: "Inter";
+  color: #101010;
+  font-weight: 700
+}
+
+.carikan{
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.hamburger{
+  width: auto;
+  height: auto;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  justify-items: right;
+  margin-right: 25px;
+  position: relative;
+  z-index: 999;
+}
+
+.hamburger span{
+  width:30px;
+  height: 3px;
+  z-index: 999;
+  background: #101010;
+  transition: transform 300ms;
+}
+
+.navline:nth-child(1){
+ transform: rotate(53deg);
+  transform-origin: 19%;
+}
+
+.navline:nth-child(2){
+ opacity: 0}
+
+.navline:nth-child(3){
+ transform: rotate(-53deg);
+  transform-origin: 19%;
+}
+
+.navbar{
+  display: flex;
+  position: absolute;
+  margin-top: -10px;
+  right: 0;
+  top: 58px;
+  flex-direction: column;
+  list-style: none;
+  transform: translatex(-100%);
+  gap: 90px;
+  opacity: 1;
+  z-index: 30;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: 400ms;
+  width: 100vw;
+  background-color: #ccc;
+}
+.navbar li{
+  color: #101010;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+.display{
+  display: flex
+}
+.navbar1{
+  transform: translatex(0%)
+}
+.slide-wrap{
+  width: 93vw;
+  height: 33vh;
+  background-color: black;
+  border-radius: 10px;
+  align-self: center;
+  position: relative;
+  overflow: hidden
+}
+.slide-wrap .slide{
+  width: 100%;
+  height: 100%;
+  font-family: "Bebas Neue";
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  transition: 500ms;
+  background-color: black;
+  background-repeat: no-repeat;
+  display: grid;
+}
+
+.slide:nth-child(1){
+  background-image: url("../toko/slide6.jpg");
+}
+
+.slide:nth-child(1) span{
+  font-size: 30px;
+  margin-right: 5px;
+  margin-top: 5px;
+  justify-self: right
+}
+
+.slide:nth-child(1)::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to left ,rgba(0,0,0,.6),transparent)
+}
+
+
+
+.slide:nth-child(2){
+  background-image: url("../toko/slide2.jpg");
+}
+
+.slide:nth-child(2)::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to top ,rgba(30,30,30,1),transparent)
+}
+
+.slide:nth-child(2) span{
+   margin-left: 25px;
+  font-size: 30px;
+  color: #ededed;
+  margin-bottom: 38px;
+  align-self: end;
+  z-index: 90;
+}
+
+.slide:nth-child(3){
+  background-image: url("../toko/slide3.jpg")
+}
+
+.slide:nth-child(3)::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom ,rgba(30,30,30,1),transparent)
+}
+.slide:nth-child(3) span{
+  font-size: 28px;
+  margin-left: 5px;
+  margin-top: 20px;
+  color: rgb(220,220,216);
+  z-index: 30;
+}
+
+.slide:nth-child(4){
+  background: black
+}
+
+.slide:nth-child(4) svg{
+  align-self: end;
+  height: 80px;
+}
+.slide:nth-child(4) .produk{
+  position: absolute;
+  justify-self: right;
+  align-self: center;
+  width:150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide:nth-child(4) div:nth-child(3){
+  background-image: url(../toko/produk4.png);
+}
+.slide:nth-child(4) .offer{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 10px;
+  margin-top: 25px;
+  font-size: 6px;
+  font-weight: 700;
+  color: rgb(200,200,200);
+  text-align: left;
+  font-family: "Inter";
+  align-self: center;
+  justify-self: left;
+}
+article{
+  align-self: center;
+  margin-top: -19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+article span{
+  font-family: "oswald";
+  font-size: 50px;
+  font-weight: 800;
+  font-style: italic;
+}
+article .top{
+  width: 90vw;
+  height: auto;
+  padding: 10px 3px;
+  background-color: rgba(210,210,215,1);
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly
+}
+
+.product-image{
+  width: 40px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  z-index: 20;
+  background-image: url(../toko/produk1.png);
+}
+
+.top:nth-child(3) .product-image{
+  background-image: url(../toko/produk5.png);
+}
+
+.top .top-name{
+  font-size: 20px;
+  letter-spacing: 0.1rem;
+  font-family: "bebas neue";
+}
+.top-number{
+  font-size: 28px;
+  font-family: "poppins";
+  color: white;
+}
+.top .top-price{
+  font-size: 16px;
+  font-family: "poppins";
+  display: inline-block;
+  color: white;
+  width: auto;
+  height: auto;
+  background-color: #101010;
+  padding: 0px 5px;
+  border-radius: 50px;
+  letter-spacing: 2px;
+}
+
+
+.shop{
+  width: 97vw;
+  box-shadow:2px 2px 10px rgba(0,0,0,.5) ;
+  margin-top: 7px;
+  align-self: center;
+  padding: 10px 0px;
+  padding-top: 20px;
+  overflow-x: auto;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  gap: 9px;
+}
+
+.sofa{
+  display: flex;
+  overflow: auto;
+}
+
+.bed{
+  display: flex;
+  overflow: auto;
+}
+
+.product-card{
+  width: 170px;
+  height: 200px;
+  border-radius: 15px;
+  background-color: rgba(225,225,225,.2);
+  border: #000 solid .8px;
+  backdrop-filter:blur(10px);
+ margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: cente;
+  flex-shrink: 0;
+  padding: 10px;
+  backdrop-filter:blur(10px);
+}
+
+.card-image{
+  width: 96%;
+  height: 60%;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: rgb(200,220,220) solid 1px;
+  background: rgba(215,215,215,1);
+  display: grid;
+  place-content: center;
+  align-self: center;
+}
+
+.card-image img{
+  width: 120px;
+  height: 90px;
+  object-fit: contain;
+  object-position: center;
+  margin-top: -10px;
+}
+
+.card-rating{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-self: left;
+}
+
+.card-rating span{
+  font-family: "poppins";
+  font-weight: 800;
+  text-transform: uppercase;
+} 
+
+.rating-star{
+  margin-top: -13px;
+}
+
+.star{
+  fill:gold;
+  width: 10px;
+  height: 10px;
+}
+
+.card-button{
+  height: auto;
+  position: relative;
+  display: flex;
+}
+
+.card-button .buy{
+  width: 80%;
+  border: none;
+  padding: 5px;
+  padding-left: 9px;
+  margin-right: 10px;
+  margin-left: -6px;
+  border-radius: 5px;
+  background-color: #111;
+  font-size: 19px;
+  display: flex;
+  box-shadow:3px 3px 5px #777 ;
+  justify-content: center;
+  font-family: "inter";
+  font-weight: 600;
+  color: #eee;
+  letter-spacing: 3px;
+  transition: 200ms;
+}
+.buy:focus{
+  transform: scale(0.9) translatey(-3px);
+}
+.buy:hover{
+  background: white;
+  color:#000;
+  box-shadow:2px 2px 5px #111;
+}
+.card-button input{
+  position: absolute;
+  left:122px;
+  opacity: 0;
+  z-index: 2;
+  height: 40px;
+  width: 50px;
+}
+.wishlist{
+  border: none;
+  border-radius: 6px;
+  padding: 7px;
+  display: grid;
+  place-content: center;
+  border: #111 solid 1.2px;
+}
+
+.love{
+  transition: 50ms;
+}
+
+.card-button input:checked + .wishlist .love {
+  fill: red;
+  color: red;
+}
