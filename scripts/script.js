@@ -2,6 +2,8 @@ const hamburger = document.querySelector('.hamburger')
 const navline = hamburger.querySelectorAll('span')
 const navbar = document.querySelector('.navbar')
 const slide = document.querySelectorAll('.slide')
+const productimage = document.querySelectorAll('.card-image')
+
 
 hamburger.addEventListener('click',() =>{
     navline.forEach((e) =>{
@@ -25,5 +27,11 @@ const sliding = () => {
     })}
     
  const interval = setInterval(sliding,2000)    
-    
+
+ productimage.forEach((e) =>{
+     e.addEventListener('unload',() =>{
+         e.classList.add('skeleton')
+     })
+         
+ })   
     
